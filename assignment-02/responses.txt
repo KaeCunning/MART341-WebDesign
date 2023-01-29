@@ -1,0 +1,9 @@
+What is a directory, and what is its relationship to files?
+A directory is a file system. It is a way for a computer to organize media. Folders and files are the common forms of directory assistance stuff.
+
+How are VCS useful?
+For collaberative projects, it's good to for everyone that is part of the team to be able to have easy access to the project files.
+It also works well as a backup in case anything goes awry with source stuff "on-site", like a broken computer or something.
+
+Do you have a favorite artistic medium? Why is it your favorite?
+I like to use adobe suite and clip studio, because they're super versatile, easy to use and help make really clean-looking work. 
