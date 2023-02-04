@@ -1,0 +1,13 @@
+What is the relationship between an IP address and the DNS?
+an ip address is identifying numbers used for any computer- servers included. A DNS is a way for 
+websites to have easily memorable names (human-friendly) that can be reverted into a IP addresses
+(computer-friendly), so it is easier surf the web. It's like a phonebook, or the contacts on your phone;
+Scrolling through contacts, to call a friedn you would click on "John", whereas the phone translates this to
+"John's phone number" and calls accordingly.
+
+What is a cookie?
+Cookies are bits of data that are saved by a server to identify specific computers and information
+that is related to specific computers; like logins and frequently visited pages.
+
+What are the three essential parts of a URL?
+Protocol, domain, and path
