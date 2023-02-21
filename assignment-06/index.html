@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+  <head>
+    <title>Assignment 06</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="assignment about meta and lists">
+    <meta name="author" content="Kaelanator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--additional meta-->
+    <style>
+        body {background-color: rgb(123, 150, 167)}
+        h1 {color: rgb(221, 221, 221)}
+        aside {text-align: right}
+    /*just found the code below on the w3 website because I wanted to make columns, didn't know how. 
+    (Thought maybe "aside" would register as like a layout element, didnt know how to set it up.)*/
+        * {
+        box-sizing: border-box;
+        }
+        .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        }
+        .row:after {
+        content: "";
+        display: table;
+        clear: both;
+        }
+    </style>
+  </head>
+
+<body>
+    <h1>My Cat is the Cutest.</h1>
+    <h2>I've elected to take this time to boast about my cat.</h2>
+    <img src="images/9516.jpeg" width="500" alt="cat" />
+    <img src="images/pawprints.png" with="100" height="550" alt="paws" />
+    <p><em>Queen of the House</em>, Roanoke</p>
+    <div class="row">
+    <div class="column">
+    <h3 style="font-size: 35px"><strong>Reasons why this cat is perfect:</strong></h3>
+    <ul style="font-size: 26px">
+        <li>Excellent toe beans</li>
+        <li><strong>Very soft</strong> </li>
+        <li>Fantastically fluffy</li>
+        <li>The most murderous-looking glare</li>
+        <li><em>So tiny</em></li>
+    </ul>
+    <img src="images/7321.jpeg" width="500" alt="cat" />
+    <p>Meditating</p>
+    <img src="images/9080.jpeg" width="500" alt="cat" />
+    <p>Slightly bothered</p>
+
+    </div>
+    <aside>
+        <div class="column">
+        <img src="images/9610.jpeg" width="500" alt="cat" />
+        <p>Guest appearance of her brother, Onyx</p>
+        <img src="images/7094.jpeg" width="500" alt="cat" />
+        <p>Sleepy</p>
+        </div>
+
+        <a style="font-size: 35px;" href= "about.html">More Cat</a>
+    </aside>
+    </div>
+
+</body>
+</html>
