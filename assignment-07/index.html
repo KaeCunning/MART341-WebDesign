@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 07</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="assignment about forms">
+    <meta name="author" content="Kaelanator">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <img src="images\Tullymonstrum.jpg" alt="Tullymonstrum" title="nasty lil freak" height="600">
+    <h1>What the Hell is the Tully Monster?</h1>
+    <p>The Tully Monster (scientifically known as <em>Tullimonstrum</em>) is a a creature that lived around 300 million years ago, 
+        who's fossils have been bamboozling scientists for decades.
+    </p>
+    </br>
+        <form
+        action="placeholder.php"
+        method="post">
+        <p>Do you think this fella is a <strong>vertabrate</strong> (like a fish), or an <strong>invertabrate</strong> (like a squid)?</p>
+        <input type="radio" name="subphylum" value="vertabrate" /> Vertabrate
+        </br>
+        </br>
+        <input type="radio" name="subphylum" value="invertabrate" /> Invertabrate
+        </br>
+        </br>
+        <p id="answerSubmitted" style="display:none"><strong>Good Guess!</strong>
+        </br>
+        The answer is that <strong>nobody knows</strong>. Its taxonomy has been a point of controversy
+    for over 50 years.
+        </strong></p>
+
+        <button type="button" onclick="document.getElementById('answerSubmitted').style.display='block'">
+            <img src="images/tully.jpg" alt="Tullymonstrum" width="50" />
+         Submit Answer
+        </button>
+        </br>
+        </br>
+        <p>What do you find most intriguing about this extinct animal? Comment down below your observations!</p>
+        <textarea name="comments" id="tullyComments" cols="80" rows="4" >What I Find Interesting...</textarea>
+        </br>
+        <input type="submit" name="userPost" value="Submit" />
+        </form>
+</body>
+</html>
