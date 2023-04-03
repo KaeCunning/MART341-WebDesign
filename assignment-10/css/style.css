@@ -1,0 +1,87 @@
+/* element selectors */
+body{
+    background-color: #2d1554;
+    text-align: center;
+    color: #1f5256;
+    font-size: 20px;
+}
+aside {
+    background-color: #2d355c;
+    float: left;
+    height: 100vh;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    width: 25%;
+ }
+ footer{
+    background-color: rgb(240, 185, 217);
+    color: #2d1554;
+    text-align: right;
+    font-size: 40px;
+    padding-right: 10px;
+    position:absolute;
+    top:70%;
+    right:0px;
+    bottom:0px;
+    left:0px;
+ }
+ div{
+    background-color: #0e0065;
+    display: inline-block;
+    border-radius: 20px;
+    border: 10px outset #2d355c;
+    padding: 5px;
+}
+/* ID selectors */
+#asideTwo{
+    background-color: #4d005c;
+    float: left;
+    height: 100vh;
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:75%;
+    width: 25%;
+}
+#title{
+    color: #1f5256;
+    font-size: 30px;
+    border: 5px solid;
+    padding: 5px;
+    text-align: center;
+}
+#colorPallete{
+    color: rgb(240, 185, 217);
+    font-family: 'Courier New', Courier, monospace;
+    display: inline-block;
+}
+/*class selectors */
+.color{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    
+}
+
+.color.one{
+    background-color: #0e0065;
+}
+.color.two{
+    background-color: #4d005c;
+}
+.color.three{
+    background-color: #2d1554;
+}
+.color.four{
+    background-color: rgb(240, 185, 217);
+}
+.color.five{
+    align-content: center;
+    background-color: #1f5256;
+}
+
+
