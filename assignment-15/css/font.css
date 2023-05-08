@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Antaro';
+    src: url('../fonts/antaro/Antaro.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'vodoDolls';
+    src: url('../fonts/voodo2/vodoDolls.TTF') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}

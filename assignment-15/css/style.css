@@ -1,0 +1,556 @@
+/*start of portfolio website*/
+
+
+/*loading screem*/
+.loader {
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+}
+  
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/*element*/
+body{
+    background-color: rgb(199, 114, 75);
+    min-width: 35em;
+
+}
+
+header{
+    background-color: rgb(168, 85, 47);
+    text-align: right;
+    display: inline;
+    position: fixed;
+    padding-bottom: 1em;
+    height: 8%;
+    border: solid rgb(167, 58, 7);
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+
+h1{
+    text-align: center;
+    font-family: "vodoDolls";
+    letter-spacing: .05em;
+}
+
+h1 img{
+    width: 4.5em;
+}
+
+#footer{
+    background-color: rgb(155, 35, 35);
+    position:absolute;
+    top: 90%;
+    right:0px;
+    bottom:0px;
+    left: .5em;
+    width: 98%;
+}
+
+
+/*title*/
+.title{
+    font-family: "vodoDolls";
+    background-color: rgb(155, 35, 35);
+    display: block;
+    font-size: 250%;
+    width: 60%;
+    min-width: 16em;
+    margin-right: 4.5em;
+    padding-top: 2em;
+    padding-bottom: .25em;
+    text-align: left;
+    border-radius: 20px 100px;
+}
+.title:hover{
+    color: rgb(218, 218, 52);
+}
+.animateTitle:hover{
+    animation-name: titleColor;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes shipAnimated {
+    0% {opacity:0%; margin-left: 30%;}
+    50% {opacity:100%;}
+    100% {opacity:0%; margin-left: 0%;}
+}
+@keyframes titleColor{
+    0% {background-color:rgb(155, 35, 35);}
+    50% {background-color:rgb(66, 226, 238);}
+    100% {background-color:rgb(155, 35, 35);}
+}
+.titleAnimeOne{
+    opacity: 0%;
+    display: inline-block;
+    position: absolute;
+    transform: scaleX(-1);
+    width: 35%;
+    margin-top: -7%;
+    margin-left: 30%;
+}
+.title:hover .titleAnimeOne{
+    animation-name: shipAnimated;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+
+/*header stuff*/
+.headerMenu{
+    display: inline-block;
+}
+.myName{
+    display: block;
+    position:absolute;
+    top: 1.5em;
+    left: 1em;
+
+}
+.gallerybtn{
+    margin-top: 1em;
+    border-radius: 100%;
+}
+.headerMenu a{
+    background-color:rgb(155, 35, 35);
+    color: aliceblue;
+    font-size: xx-large;
+    padding: .75em;
+    margin-right: 1em;
+
+}
+.headerMenu:hover a{
+    color: yellow;
+}
+
+
+/*drop Menu stuff*/
+.Menubtn{
+    background-color: rgb(155, 35, 35);
+    margin-top: .25em;
+    font-family: "vodoDolls";
+    font-size: x-large;
+    color: aliceblue;
+    width: 10em;
+    border-color: brown;
+    border-radius: 10%;
+    padding: .6em;
+}
+.Menubtn:hover{
+    background-color: rgb(66, 226, 238);
+    transition: .15s;
+}
+.dropMenu{
+    display: inline-block;
+    height: 5%;
+    padding-right: 3%;
+}
+.dropMenuItem{
+    background-color: aqua;
+    text-align: left;
+    border-radius: 10%;
+    margin-right: 1em;
+    width: 15%;
+    min-width: 10%;
+    display: none;
+    position:absolute;
+    min-width: 5em;
+    right: 0px;
+    z-index: 11;
+}
+.dropMenuItem a{
+    background-color: rgb(0, 238, 255);
+    color: brown;
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: x-large;
+    border: .1em inset;
+    padding: .5em;
+    margin: 12px 16px;
+    display: block;
+}
+
+.dropMenu:hover .dropMenuItem{
+    display: block;
+}
+.dropOne:hover a{
+    background-color: rgb(0, 192, 206);
+    color: yellow;
+}
+.dropTwo:hover a{
+    background-color: rgb(0, 192, 206);
+    color: yellow;
+}
+.dropThree:hover a{
+    background-color: rgb(0, 192, 206);
+    color: yellow;
+}
+/*Additional Index decor*/
+@keyframes indexColor{
+    0% {border-color:rgb(155, 35, 35);}
+    50% {border-color:rgb(66, 226, 238);}
+    100% {border-color:rgb(155, 35, 35);}
+}
+.indexDecor{
+    float: left;
+    position: absolute;
+    background-color: rgb(155, 35, 35);
+    border: 1.25em rgb(155, 35, 35) solid;
+}
+.indexsecDecOne{
+    padding-right: 50%;
+    left: 0;
+    top: 80%;
+}
+.indexsecDecTwo{
+    padding-right: 35%;
+    left: 0;
+    top: 70%;
+}
+.indexsecDecThree{
+    padding-right: 20%;
+    left: 0;
+    top: 60%;
+}
+.indexDecor:hover{
+    animation-name: indexColor;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+/*Poster work stuff*/
+.posterHeader{
+    position: absolute;
+}
+.poster img{
+    z-index:0;
+}
+.poster img{
+    width:33%;
+    border: 10px black solid;
+    border-radius: 3%;
+    padding: .5em;
+    background-color: rgb(187, 203, 216);
+    position: absolute;
+    z-index:0;
+}
+.poster img:hover{
+    z-index:1;
+    cursor: crosshair;
+    transition-property: width;
+    transition-duration: 0.8s;
+    width:36%;
+}
+
+.poster .postOne img{
+    margin-left: .5em;
+}
+.poster .postTwo img{
+    margin-left: 10.5em;
+}
+.poster .postThree img{
+    margin-left: 20.5em;
+}
+.poster .postFour img{
+    margin-left: 30.5em;
+}
+.poster .postFive img{
+    margin-left: 40.5em;
+}
+.poster .postSix img{
+    margin-left: 50.5em;
+    width: 30.55%
+}
+.poster .postSix img:hover{
+    transition-duration: 0.8s;
+    width:33%;
+}
+.poster .postSeven img{
+    margin-left: 60.5em;
+    width: 30.55%
+}
+.poster .postSeven img:hover{
+    transition-duration: 0.8s;
+    width:33%;
+}
+
+
+/*About Page stuff*/
+#profPhoto{
+    width: 15em;
+    border-radius: 20%;
+    border:  10px rgb(122, 54, 49) solid;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    padding-top: 0em;
+    padding-bottom: 2em;
+}
+#profPhoto img{
+    width: 10em;
+    border-radius: 20%;
+    border: 10px rgb(199, 114, 75) solid;
+    align-content: center;
+}
+.aboutExtras{
+    width: 80%;
+    border-radius: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    background-color: rgb(155, 35, 35);
+    text-align: center;
+}
+.exhib{
+    width: 30%;
+    border-radius: 5%;
+    font-family: "vodoDolls", sans-serif;
+    letter-spacing: .1em;
+    display: inline-block;
+    background-color: rgb(155, 71, 60);
+    border: 5px rgb(155, 71, 60) inset;
+}
+.exhibContent{
+    font-family: 'Courier New', Courier, monospace;
+}
+.exhibContent img{
+    width: 15em;
+    height: 20em;
+}
+.personalBlurb{
+    margin-left: 34.25%;
+    text-align: left;
+    border: 5px rgb(122, 54, 49) solid;
+    padding: .5em;
+}
+
+
+/*background decor*/
+.decor{
+    float: left;
+    position: absolute;
+    background-color: rgb(155, 35, 35);
+    border: 1.25em rgb(155, 35, 35) solid;
+    max-width: 25%;
+
+}
+.decOne{
+    padding-left: 20%;
+    left: 0;
+    top: 6em;
+}
+.decTwo{
+    padding-left: 15%;
+    left: 0;
+    top: 9.5em;
+}
+.decThree{
+    padding-left: 10%;
+    left: 0;
+    top: 13.5em;
+}
+.secDecor{
+    float: right;
+    position: absolute;
+    background-color: rgb(155, 35, 35);
+    border: 1.25em rgb(155, 35, 35) solid;
+    max-width: 25%;
+    right: 0;
+}
+.secDecOne{
+    padding-right: 20%;
+    right: 0;
+    top: 95%;
+}
+.secDecTwo{
+    padding-right: 15%;
+    right: 0;
+    top: 86.5%;
+}
+.secDecThree{
+    padding-right: 10%;
+    right: 0;
+    top: 78%;
+}
+
+
+/*Blender work stuff*/
+@keyframes cogRotate{
+    from {
+    transform: rotate(0turn);}
+    to {
+    transform: rotate(1turn);}
+}
+@keyframes imageRotate{
+    from {
+        transform: rotate(0deg) translate(26em);
+      }
+      to {
+        transform: rotate(360deg) translate(26em);
+      }
+  }
+.cogImage:hover{
+    animation-play-state: paused;
+    opacity: 100%;  
+}
+.main:hover{
+    opacity: 50%;
+}
+
+.imageAside{
+    animation-play-state: paused;
+    background-color: rgb(168, 85, 47);
+    border: 1em solid rgb(167, 58, 7);
+    display: inline-block;
+    text-align: right;
+    margin-left: 65em;
+    margin-top: -15em;
+    width: 30%;
+    height: 15em;
+}
+/*tried so hard to make a cog in just css, but eh, this works fine*/
+.cog{
+    width: 40em;
+
+    overflow: visible;
+}
+.cog img{
+    width: 40em;
+
+}
+
+.cogImage{
+    width: 10em;
+    opacity: 80%;
+    animation: imageRotate 12s infinite;
+    animation-timing-function: linear;
+}
+.imageMain {
+    width: 20em;
+    height: 20em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left: 8em;
+    margin-top: -20em;
+
+}
+.main {
+    width: 20em;
+    height: 20em;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-left: 8em;
+    margin-top: 4em;
+    animation: cogRotate 12s infinite;
+    animation-timing-function: linear;
+}
+.main > * {
+    grid-column: 1;
+    grid-row: 1;
+}
+.imageMain > * {
+    grid-column: 1;
+    grid-row: 1;
+}
+/*misc Gallery stuff*/
+.galleryCateg{
+    height: 20em;
+    width: 80%;
+    border-radius: 5%;
+    display: block;
+    margin: auto;
+    background-color: rgb(155, 35, 35);
+    text-align: center;
+}
+.miscGallery{
+    height: 10%;
+    display: inline-block;
+    margin-left: 5%;
+
+}
+.miscHone{
+    text-align: left;
+    margin-right: 50%;
+    margin-left: 1em;
+    padding: .5em;
+    padding-left: 1.5em;
+    background-color: rgb(122, 54, 49);
+}
+.miscTitle{
+    font-family: "vodoDolls";
+    margin-left: .5em;
+    font-size: x-large;
+    width: 10em;
+    padding: .25em;
+    border-radius: 20%;
+    display: inline;
+    float: left;
+    background-color: rgb(199, 114, 75);
+    overflow: hidden;
+
+}
+.galleryCateg:hover img{
+    width: 17%;
+    transition-duration: 1s;
+}
+.miscGallery:hover .miscTitle{
+    background-color: rgb(122, 54, 49);
+    transition-duration: 1s;
+    color: rgb(218, 218, 52);
+    width: 100%;
+    margin-left: -.25em;
+    margin-top: -1em;
+}
+.miscGallery:hover{
+    width: fit-content;
+    transition-duration: 1s;
+}
+.miscObjectArrange{
+    margin-left: 10%;
+    text-align: center;
+}
+
+.miscObject{
+    opacity: 95%;
+    padding: .25em;
+    display: inline;
+    overflow: scroll;
+    background-color: rgb(27, 2, 0);
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.miscGalOne{
+    width: 10%;
+    margin-top: -1em;
+}
+.miscGalTwo{
+    width: 15%;
+}
+.miscGalThree{
+    width: 10%;
+    margin-top: -.75em;
+}
+.miscGalFour{
+    width: 10%;
+}
+#sketchArrange{
+    width: 18%;
+}
+#additionalArrange{
+    width: 18%;
+}
+ 
